@@ -1,0 +1,41 @@
+body{
+    /*padding: 2%;*/
+    background-color: rgb(34, 33, 33);
+}
+
+
+#contenedor_padre{
+    display: grid;
+    margin: 3%;
+    grid-template-areas:    "header header header"
+                            "seccion1 seccion1 seccion2"
+                            "footer footer footer";
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 1fr 1fr 80px;
+    gap: 20px;                        
+}
+
+#cabecera{
+    background-color: rgb(255, 225, 55);
+    padding: 5%;
+    grid-area: header;
+}
+
+
+#contenedor_1{
+    background-color: lavender;
+    padding: 6%;
+    grid-area: seccion1;
+}
+
+#contenedor_2{
+    background-color: rgb(60, 63, 255);
+    padding: 8%;
+    grid-area: seccion2;
+}
+
+#pie_pagina{
+    background-color: red;
+    padding: 2%;
+    grid-area: footer;
+}
